@@ -1,0 +1,25 @@
+.formulario{
+    
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .input-ctn{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        textarea{
+            margin: 0 auto;
+            min-width: 90%;
+            max-width:90%; 
+            min-height: 20rem;
+            max-height: 20rem;
+        }
+    }
+    .submit{
+        text-transform: uppercase;
+    }
+
+    padding: 4rem;
+}

@@ -1,0 +1,15 @@
+.button-green{
+    @include boton($verde,darken($blanco,5),block);
+}
+
+.button-yellow{
+    @include boton($amarillo,$negro,block);
+}
+
+.button-red{
+    @include boton($rojo,$negro,block);
+}
+.w-100{
+    width: 100%;
+    padding: 1.5rem 0;
+}
