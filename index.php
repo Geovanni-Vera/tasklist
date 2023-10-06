@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 incluirTemplate('header',$inicio = true);
 ?>
 <main class="main">
-    <h1>Tasks</h1>
+    <h1>Tareas</h1>
     <section class="task-container contenedor">
         <!--Card task-->
         <?php foreach($tasks as $row ): ?>

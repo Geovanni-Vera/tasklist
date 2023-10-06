@@ -1,7 +1,7 @@
 <?php
 require __DIR__.'/includes/app.php';
 use App\Task;
-$db = conectarDB();
+
 $task = new Task;
 $errores = Task::getErrores();
 if($_SERVER['REQUEST_METHOD']==='POST'){
@@ -18,7 +18,7 @@ incluirTemplate('header',$inicio = false);
     <main>
         <form action="" method="post" class="formulario contenedor">
             <fieldset>
-                <legend>Create Task</legend>
+                <legend>Crear tarea</legend>
                 <?php include 'includes/templates/formulario.php' ?>
             </fieldset>
 

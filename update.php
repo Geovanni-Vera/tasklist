@@ -26,7 +26,7 @@ incluirTemplate('header',$inicio = false);
     <main>
         <form action="" method="post" class="formulario contenedor">
             <fieldset>
-                <legend>Update Task</legend>
+                <legend>Actualizar Tarea</legend>
                 <?php include 'includes/templates/formulario.php' ?>
             </fieldset>
 
