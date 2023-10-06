@@ -1,10 +1,10 @@
 <?php
 //incluimos las funciones
-require 'funciones.php';
+require __DIR__.'\funciones.php';
 //incluimos la base de datos
-require 'config/database.php';
+require __DIR__.'\config\database.php';
 //importamos el autoloader
-require '../clases/task.php';
+require __DIR__.'\..\clases\task.php';
 //usamos el namespace
 use App\Task;
 //conectar  a la base de datos
