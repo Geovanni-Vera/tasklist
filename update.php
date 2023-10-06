@@ -1,5 +1,6 @@
 <?php
-include 'includes/templates/header.php';
+require __DIR__.'/includes/app.php';
+incluirTemplate('header',$inicio = false);
 ?>
     <main>
         <form action="guardar.php" method="post" class="formulario contenedor">

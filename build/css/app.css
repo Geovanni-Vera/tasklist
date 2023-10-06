@@ -384,6 +384,7 @@ h4 {
   margin-top: 2.5rem;
   display: block;
   border: none;
+  text-transform: uppercase;
 }
 .button-green:hover {
   cursor: pointer;
@@ -400,6 +401,7 @@ h4 {
   margin-top: 2.5rem;
   display: block;
   border: none;
+  text-transform: uppercase;
 }
 .button-yellow:hover {
   cursor: pointer;
@@ -416,6 +418,7 @@ h4 {
   margin-top: 2.5rem;
   display: block;
   border: none;
+  text-transform: uppercase;
 }
 .button-red:hover {
   cursor: pointer;

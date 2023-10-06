@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     }
 }
 
-include 'includes/templates/header.php';
+incluirTemplate('header',$inicio = false);
 ?>
 
     <main>

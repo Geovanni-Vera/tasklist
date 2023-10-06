@@ -71,4 +71,30 @@ class Task{
             header('location: /tasklist/index.php');
         }
      }
+     /*Read*/
+     public static function all(){
+        $query = "SELECT * FROM tasks;";
+        $result = self::consultarSql($query);
+        return $result;
+     } 
+
+     public static function consultarSql($query){
+        $result = self::$db->query($query);
+        $array=[];
+        while( $row=$result->fetch_assoc()){
+            $array[]=self::crearObjeto($row);
+        }
+        $result->free();
+        return $array;
+     }
+
+     protected static function crearObjeto($registro){
+        $objeto = new self;
+        foreach($registro as $key => $value){
+            if(property_exists($objeto,$key))
+                $objeto->$key = $value;
+        }
+        return $objeto;
+     }
+     /*Update*/
 }

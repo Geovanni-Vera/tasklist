@@ -1,3 +1,6 @@
+<?php
+$inicio ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +16,11 @@
         <div class="header-container contenedor">
             <a href="/"><h2 class='logo'><span>Task</span> List</h2></a>
             <nav class="navegacion-principal">
-                <a href="create.php" class="button-green">create</a>
+                <?php if($inicio):?>
+                    <a href="create.php" class="button-green">crear tarea</a>
+                <?php elseif($inicio === false):?>
+                    <a href="index.php" class="button-green">Volver</a>
+                <?php endif; ?>    
             </nav>
         </div>
     </header>
