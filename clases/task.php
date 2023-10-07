@@ -60,6 +60,9 @@ class Task
         if (!$this->descripcion) {
             self::$errores[] = "Descripcion necesaria";
         }
+        if(!$this -> descripcion > 600){
+            self::$errores[]="El numero maximo de caracteres es 600 ";
+        }
         return self::$errores;
     }
     /*Crear*/
