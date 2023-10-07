@@ -1,6 +1,7 @@
 <?php
 require __DIR__.'/includes/app.php';
 use App\Task;
+$mensaje = $_GET['mensaje'] ?? null;
 $tasks = Task::all();
 if($_SERVER['REQUEST_METHOD'] === 'POST')
 {
@@ -17,6 +18,19 @@ incluirTemplate('header',$inicio = true);
 ?>
 <main class="main">
     <h1>LISTA DE TAREAS</h1>
+    <?php  if(intval($mensaje) === 1):?>
+        <div class="alerta correcto contenedor">
+            <p><?php echo "tarea creada correctamente" ?></p>
+        </div>
+    <?php  elseif(intval($mensaje) === 2):?>
+        <div class="alerta correcto contenedor">
+            <p><?php echo "tarea actualizada correctamente" ?></p>
+        </div>    
+    <?php  elseif(intval($mensaje) === 3):?>
+        <div class="alerta error contenedor" >
+            <p><?php echo "error en la tarea escogida" ?></p>
+        </div>     
+    <?php endif; ?>
     <section class="task-container contenedor">
         <!--Card task-->
         <?php foreach($tasks as $row ): ?>

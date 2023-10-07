@@ -14,7 +14,7 @@ $inicio ;
 <body>
     <header class="header">
         <div class="header-container contenedor">
-            <a href="/"><h2 class='logo'><span>Task</span> List</h2></a>
+            <a href="/tasklist/index.php"><h2 class='logo'><span>Task</span> List</h2></a>
             <nav class="navegacion-principal">
                 <?php if($inicio):?>
                     <a href="create.php" class="button-green">crear tarea</a>
