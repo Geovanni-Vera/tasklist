@@ -31,7 +31,7 @@ incluirTemplate('header',$inicio = true);
             <p><?php echo "archivo no autorizado" ?></p>
         </div>     
     <?php  elseif(intval($mensaje) === 4):?>
-        <div class="alerta error contenedor" >
+        <div class="alerta correcto contenedor" >
             <p><?php echo "Tarea borrada correctamente" ?></p>
         </div>      
     <?php endif;?>

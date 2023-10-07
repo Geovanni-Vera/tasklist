@@ -16,6 +16,11 @@ incluirTemplate('header',$inicio = false);
 ?>
 
     <main>
+        <?php foreach($errores as $error) : ?>
+            <div class="alerta error contenedor">
+                <p><?php echo $error ?></p>
+            </div>
+        <?php endforeach; ?>
         <form action="" method="post" class="formulario contenedor">
             <fieldset>
                 <legend>Crear tarea</legend>
