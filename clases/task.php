@@ -157,7 +157,7 @@ class Task
         $query = "DELETE FROM tasks WHERE id = " . self::$db->escape_string($this->id) . " LIMIT 1; ";
         $resultado = self::$db->query($query);
         if ($resultado) {
-            header('Location: /tasklist/index.php');
+            header('Location: /tasklist/index.php?mensaje=4');
         }
     }
 }

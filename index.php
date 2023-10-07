@@ -30,7 +30,16 @@ incluirTemplate('header',$inicio = true);
         <div class="alerta error contenedor" >
             <p><?php echo "archivo no autorizado" ?></p>
         </div>     
-    <?php endif; ?>
+    <?php  elseif(intval($mensaje) === 4):?>
+        <div class="alerta error contenedor" >
+            <p><?php echo "Tarea borrada correctamente" ?></p>
+        </div>      
+    <?php endif;?>
+    <?php 
+    if(isset($mensaje)){
+        header( "refresh:1;URL=/tasklist/index.php" );
+    }
+    ?>
     <section class="task-container contenedor">
         <!--Card task-->
         <?php foreach($tasks as $row ): ?>
