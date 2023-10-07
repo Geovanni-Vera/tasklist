@@ -37,7 +37,7 @@ incluirTemplate('header',$inicio = true);
     <?php endif;?>
     <?php 
     if(isset($mensaje)){
-        header( "refresh:1;URL=/tasklist/index.php" );
+        header( "refresh:1;URL=index.php" );
     }
     ?>
     <section class="task-container contenedor">

@@ -79,7 +79,7 @@ class Task
         //resultado 
         $resultado = self::$db->query($query);
         if ($resultado) {
-            header('location: /tasklist/index.php?mensaje=1');
+            header('location: index.php?mensaje=1');
         }
     }
     /*Read*/
@@ -148,7 +148,7 @@ class Task
         $result = self::$db->query($query);
 
         if($result){
-            header('location: /tasklist/index.php?mensaje=2');
+            header('location: index.php?mensaje=2');
         }
     }
     /*-------------------DELETE--------------- */
@@ -157,7 +157,7 @@ class Task
         $query = "DELETE FROM tasks WHERE id = " . self::$db->escape_string($this->id) . " LIMIT 1; ";
         $resultado = self::$db->query($query);
         if ($resultado) {
-            header('Location: /tasklist/index.php?mensaje=4');
+            header('Location: index.php?mensaje=4');
         }
     }
 }
