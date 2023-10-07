@@ -28,7 +28,7 @@ incluirTemplate('header',$inicio = true);
         </div>    
     <?php  elseif(intval($mensaje) === 3):?>
         <div class="alerta error contenedor" >
-            <p><?php echo "error en la tarea escogida" ?></p>
+            <p><?php echo "archivo no autorizado" ?></p>
         </div>     
     <?php endif; ?>
     <section class="task-container contenedor">
