@@ -1,5 +1,6 @@
 .button-green{
-    @include boton($verde,darken($blanco,5),block);
+    @include boton($gris,$blanco,block);
+
 }
 
 .button-yellow{

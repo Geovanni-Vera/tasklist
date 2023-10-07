@@ -375,8 +375,8 @@ h4 {
 /*Grillas*/
 /*Boton*/
 .button-green {
-  background-color: #8cc63f;
-  color: #f2f2f2;
+  background-color: #a7a7a7;
+  color: #FFFFFF;
   font-weight: 700;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -388,7 +388,7 @@ h4 {
 }
 .button-green:hover {
   cursor: pointer;
-  background-color: #7fb636;
+  background-color: #9a9a9a;
 }
 
 .button-yellow {
