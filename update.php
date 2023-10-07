@@ -6,7 +6,7 @@ $id = $_GET['id'];
 $id = filter_var($id, FILTER_VALIDATE_INT);
 //si no es un id valido lo redireccionamos a el administrador
 if (!$id) {
-    header('location: /tasklist/index.php');
+    header('location: /tasklist/index.php?mensaje=3');
 }
 
 $task = Task::find($id);

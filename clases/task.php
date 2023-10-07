@@ -76,7 +76,7 @@ class Task
         //resultado 
         $resultado = self::$db->query($query);
         if ($resultado) {
-            header('location: /tasklist/index.php');
+            header('location: /tasklist/index.php?mensaje=1');
         }
     }
     /*Read*/
@@ -145,7 +145,7 @@ class Task
         $result = self::$db->query($query);
 
         if($result){
-            header('location: /tasklist/index.php');
+            header('location: /tasklist/index.php?mensaje=2');
         }
     }
     /*-------------------DELETE--------------- */

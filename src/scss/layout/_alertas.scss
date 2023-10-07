@@ -1,0 +1,13 @@
+.alerta{
+    text-align: center;
+    text-transform: uppercase;
+    p{
+        color: $blanco;
+    }
+}
+.error{
+    background-color: $rojo;
+}
+.correcto{
+    background-color: $verde;
+}

@@ -529,3 +529,19 @@ h4 {
 .formulario .submit {
   text-transform: uppercase;
 }
+
+.alerta {
+  text-align: center;
+  text-transform: uppercase;
+}
+.alerta p {
+  color: #FFFFFF;
+}
+
+.error {
+  background-color: #fb0c06;
+}
+
+.correcto {
+  background-color: #8cc63f;
+}
